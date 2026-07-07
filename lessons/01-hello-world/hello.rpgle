@@ -9,4 +9,4 @@ dcl-proc main;
     dsply message;
     dsply messageConst;
 
-end-proc;
+end-proc;   
