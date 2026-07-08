@@ -11,9 +11,9 @@ dcl-proc main;
         SELECT CUSTOMER_NAME INTO :CUSNAME
         FROM customers
         WHERE CUSTOMER_NUMBER = :CUSNUM;
-
+            
     if sqlcode <> 0;
-        // Print error to console?
+        // Print error to console
         snd-msg 'Error: ' %target(*self:2);
     else;
         snd-msg 'Customer Name: ' + CUSNAME %target(*self:2);
